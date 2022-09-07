@@ -1,0 +1,26 @@
+.main__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1.75rem;
+  padding-bottom: 3.5rem;
+}
+
+.letter__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  & .letters {
+    height: 2.5rem;
+    width: 12.5rem;
+    border: 1px solid $clr--gray;
+    border-radius: 15px;
+  }
+  & .btn__search_letter {
+    background: transparent;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid $clr--gray;
+    border-radius: 50%;
+  }
+}

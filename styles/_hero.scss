@@ -1,0 +1,39 @@
+.hero__section {
+  background: $clr--black;
+  border-radius: 15px;
+  color: $clr--light;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.hero__img_container {
+  text-align: center;
+  padding: 12px 0;
+}
+
+.hero__text_container {
+  max-width: 17.375rem;
+  padding-left: 16px;
+
+  .hero__header {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    font-weight: 700;
+    margin-top: 23px;
+  }
+  .hero__subheader {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.0632rem;
+    margin-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.socials__container {
+  img {
+    filter: invert(100);
+    filter: brightness(100);
+  }
+}

@@ -11,6 +11,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0 15px;
 }
 
 h2,
@@ -44,4 +45,68 @@ h3 {
   display: flex;
   flex-direction: row;
   gap: 0.875rem;
+}
+
+.main__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1.75rem;
+  padding-bottom: 3.5rem;
+}
+
+.letter__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+.letter__container .letters {
+  height: 2.5rem;
+  width: 12.5rem;
+  border: 1px solid #ababab;
+  border-radius: 15px;
+}
+.letter__container .btn__search_letter {
+  background: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #ababab;
+  border-radius: 50%;
+}
+
+.hero__section {
+  background: #2d2d2d;
+  border-radius: 15px;
+  color: #fafafa;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.hero__img_container {
+  text-align: center;
+  padding: 12px 0;
+}
+
+.hero__text_container {
+  max-width: 17.375rem;
+  padding-left: 16px;
+}
+.hero__text_container .hero__header {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+  margin-top: 23px;
+}
+.hero__text_container .hero__subheader {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.0632rem;
+  margin-top: 8px;
+  padding-bottom: 8px;
+}
+
+.socials__container img {
+  filter: invert(100);
+  filter: brightness(100);
 }/*# sourceMappingURL=main.css.map */
