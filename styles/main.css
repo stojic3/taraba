@@ -1,1 +1,47 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.icon__btn {
+  border: none;
+  background: transparent;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h2,
+h3 {
+  font-family: "Comfortaa", cursive;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fafafa;
+  padding-top: 2.125rem;
+  padding-bottom: 0.6875rem;
+}
+
+.logo__container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.3125rem;
+}
+.logo__container .btn__expand {
+  margin-left: 3px;
+  position: relative;
+  left: 1%;
+  top: -30%;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  gap: 0.875rem;
+}/*# sourceMappingURL=main.css.map */

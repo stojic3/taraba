@@ -5,29 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>речник</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
 
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="logo">
-        <img src="./slike/logo.png" alt="Taraba logo" />
-        <img src="./slike/речник..png" alt="" />
-        <button class="btn__expand">
-          <img src="./ikonice/expand.more.png" alt="" />
+    <header class="header">
+      <div class="logo__container">
+        <img class="logo" src="./slike/logo.svg" alt="Taraba logo" />
+        <img class="logo__text" src="./slike/речник..svg" alt="" />
+        <button class="icon__btn btn__expand">
+          <img src="./ikonice/expand.more.svg" alt="" />
         </button>
       </div>
       <div class="header__nav">
-        <button class="btn__search">
-          <img src="./ikonice/search.png" alt="" />
+        <button class="icon__btn btn__search">
+          <img src="./ikonice/search.svg" alt="" />
         </button>
-        <button class="btn__theme">
-          <img src="./ikonice/light1.png" alt="" />
-          <img src="./ikonice/light2.png" alt="" />
+        <button class="icon__btn btn__theme">
+          <img src="./ikonice/light.svg" alt="" />
         </button>
-        <button class="btn__login">
-          <img src="./ikonice/user.png" alt="" />
+        <button class="icon__btn btn__login">
+          <img src="./ikonice/user.svg" alt="" />
         </button>
       </div>
     </header>
@@ -38,30 +45,30 @@
       <div class="letter__container">
         <div class="letters"></div>
         <button class="btn__search_letter">
-          <img src="./ikonice/search.png" alt="" />
+          <img src="./ikonice/search.svg" alt="" />
         </button>
       </div>
-      <button class="btn__nav_expand">
-        <img src="./ikonice/bar.png" alt="" />
-        <img src="./ikonice/bar.png" alt="" />
+      <button class="icon__btn btn__nav_expand">
+        <img src="./ikonice/bars.svg" alt="" />
       </button>
     </nav>
     <!-- NAVIGATION END-->
+
     <main>
       <!-- HERO SECTION -->
       <section class="hero__section">
         <div class="hero__img_container">
-          <img src="./slike/hero.png" alt="" />
+          <img src="./slike/hero.svg" alt="" />
         </div>
         <h2 class="hero__header">Тараба речник</h2>
-        <p class="hero__paragraph">
+        <h3 class="hero__paragraph">
           Тараба речник се бави страним речима у српском језику, давајући им
           објашњење и алтернативу.
-        </p>
+        </h3>
         <h3>Пратите нас на</h3>
         <div class="socials__container">
-          <img src="./ikonice/instagram.png" alt="" />
-          <img src="./ikonice/facebook.png" alt="" />
+          <img src="./ikonice/instagram-square.svg" alt="" />
+          <img src="./ikonice/facebook-square.svg" alt="" />
         </div>
       </section>
       <!-- HERO SECTION END -->
@@ -71,9 +78,9 @@
         <h2>Последње додате речи</h2>
         <div class="carousel__container">
           <div class="carousel__img_container">
-            <img src="./slike/carousell.pic.png" alt="" />
-            <img src="./slike/carousell.pic.png" alt="" />
-            <img src="./slike/carousell.pic.png" alt="" />
+            <img src="./slike/carousel.pic.svg" alt="" />
+            <img src="./slike/carousel.pic.svg" alt="" />
+            <img src="./slike/carousel.pic.svg" alt="" />
           </div>
           <div class="dot__container">
             <div class="dot"></div>
@@ -97,9 +104,9 @@
         <h2>Најчешће прегледане речи</h2>
         <div class="carousel__container">
           <div class="carousel__img_container">
-            <img src="./slike/carousell.pic.png" alt="" />
-            <img src="./slike/carousell.pic.png" alt="" />
-            <img src="./slike/carousell.pic.png" alt="" />
+            <img src="./slike/carousel.pic.svg" alt="" />
+            <img src="./slike/carousel.pic.svg" alt="" />
+            <img src="./slike/carousel.pic.svg" alt="" />
           </div>
           <div class="dot__container">
             <div class="dot"></div>
@@ -113,13 +120,14 @@
       <!-- INSTAGRAM PAGE -->
       <section class="instagram__section">
         <h2>
-          <img src="./ikonice/instagram.png" alt="" /><a href="#">@taraba.rs</a
+          <img src="./ikonice/instagram-round.svg" alt="" /><a href="#"
+            >@taraba.rs</a
           >речник
         </h2>
         <p>Погледај како изгледа садржај на нашем Инстаграм профилу</p>
         <div class="img__container">
-          <img src="./slike/insta.pic.png" alt="" />
-          <img src="./slike/insta.pic.png" alt="" />
+          <img src="./slike/insta.pic.svg" alt="" />
+          <img src="./slike/insta.pic.svg" alt="" />
         </div>
       </section>
       <!-- INSTAGRAM PAGE END-->
