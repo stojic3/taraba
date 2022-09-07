@@ -5,6 +5,8 @@
   background: $clr--light;
   padding-top: 2.125rem;
   padding-bottom: 0.6875rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 .logo__container {
@@ -13,7 +15,7 @@
   align-items: baseline;
   gap: 0.3125rem;
   & .btn__expand {
-    margin-left: 3px;
+    margin-left: 0.1875rem;
     position: relative;
     left: 1%;
     top: -30%;

@@ -1,0 +1,15 @@
+.suggest-word__section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: $clr--gray-dark;
+  }
+  .btn {
+    margin-top: 0.5rem;
+  }
+}
