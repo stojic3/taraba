@@ -79,11 +79,7 @@
       <section class="last-added__section">
         <h2>Последње додате речи</h2>
         <div class="carousel__container">
-          <div class="carousel__img_container">
-            <img src="./slike/carousel.pic.svg" alt="" />
-            <img src="./slike/carousel.pic.svg" alt="" />
-            <img src="./slike/carousel.pic.svg" alt="" />
-          </div>
+          <div class="carousel__card_container"></div>
           <div class="dot__container">
             <div class="dot"></div>
             <div class="dot"></div>
@@ -96,20 +92,18 @@
       <!-- SUGGEST WORD-->
       <section class="suggest-word__section">
         <h2>Буди слободан/на да нам предложиш реч</h2>
-        <p>За предлог речи потребно је да имаш отворен налог</p>
+        <p class="section__paragraph">
+          За предлог речи потребно је да имаш отворен налог
+        </p>
         <button class="btn">Предложи реч</button>
       </section>
       <!-- SUGGEST WORD END -->
 
       <!-- MOST FREQUENTLY SEARCHED -->
-      <section class="last-added__section">
+      <section class="frequently__section">
         <h2>Најчешће прегледане речи</h2>
         <div class="carousel__container">
-          <div class="carousel__img_container">
-            <img src="./slike/carousel.pic.svg" alt="" />
-            <img src="./slike/carousel.pic.svg" alt="" />
-            <img src="./slike/carousel.pic.svg" alt="" />
-          </div>
+          <div class="carousel__card_container"></div>
           <div class="dot__container">
             <div class="dot"></div>
             <div class="dot"></div>
@@ -121,12 +115,18 @@
 
       <!-- INSTAGRAM PAGE -->
       <section class="instagram__section">
-        <h2>
-          <img src="./ikonice/instagram-round.svg" alt="" /><a href="#"
-            >@taraba.rs</a
-          >речник
-        </h2>
-        <p>Погледај како изгледа садржај на нашем Инстаграм профилу</p>
+        <div class="title__align">
+          <img
+            class="instagram__icon"
+            src="./ikonice/instagram-round.svg"
+            alt=""
+          />
+          <h2><a class="instagram__link" href="#">@taraba.rs</a> речник</h2>
+        </div>
+
+        <p class="section__paragraph">
+          Погледај како изгледа садржај на нашем Инстаграм профилу
+        </p>
         <div class="img__container">
           <img src="./slike/insta.pic.svg" alt="" />
           <img src="./slike/insta.pic.svg" alt="" />
@@ -136,6 +136,6 @@
     </main>
 
     <!-- javascript -->
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
   </body>
 </html>

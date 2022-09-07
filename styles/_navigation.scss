@@ -14,7 +14,7 @@
     height: 2.5rem;
     width: 12.5rem;
     border: 1px solid $clr--gray;
-    border-radius: 0.9375rem;
+    border-radius: $b-rad;
   }
   & .btn__search_letter {
     background: transparent;

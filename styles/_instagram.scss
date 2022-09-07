@@ -1,0 +1,26 @@
+.title__align {
+  display: flex;
+  flex-direction: row;
+  gap: 0.52rem;
+  margin-bottom: 0.5rem;
+}
+.instagram__icon {
+  width: 1.425rem;
+}
+
+.instagram__link {
+  color: $clr--accent;
+  font-size: 1.125rem;
+  line-height: 1.375;
+}
+
+.img__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  & img {
+    min-width: 10rem;
+    border-radius: $b-rad;
+  }
+}

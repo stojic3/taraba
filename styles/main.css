@@ -42,6 +42,51 @@ h2 {
   line-height: 1.0625rem;
 }
 
+.section__paragraph {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #666666;
+}
+
+.card {
+  background: #ffe3c5;
+  width: 9rem;
+  height: 7.8125rem;
+  border-radius: 0.9375rem;
+}
+.card .card__img_container {
+  position: relative;
+  top: -5%;
+}
+.card .card__img_container .card__img {
+  width: 8.5rem;
+  height: 7.3125rem;
+}
+.card .card__words {
+  position: relative;
+  top: -30.5%;
+  background: #2d2d2d;
+  height: 2.628125rem;
+  border-radius: 0px 0.9375rem 0.9375rem 0.9375rem;
+  z-index: 100;
+  color: #fafafa;
+  text-align: center;
+}
+.card .card__words .serbian__word {
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  padding-top: 0.3125rem;
+}
+.card .card__words .english__word {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  padding-bottom: 0.3125rem;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -135,7 +180,38 @@ h2 {
 }
 
 .last-added__section {
-  padding: 1.5rem 0;
+  padding-bottom: 2rem;
+}
+.last-added__section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.carousel__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.125rem;
+}
+
+.carousel__card_container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.dot__container {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  background: #ababab;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
 }
 
 .suggest-word__section {
@@ -143,12 +219,43 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-}
-.suggest-word__section p {
-  font-size: 0.875rem;
-  line-height: 1rem;
-  color: #666666;
+  padding-bottom: 3.125rem;
 }
 .suggest-word__section .btn {
   margin-top: 0.5rem;
+}
+
+.frequently__section {
+  padding-bottom: 2rem;
+}
+.frequently__section h2 {
+  margin-bottom: 2.1875rem;
+}
+
+.title__align {
+  display: flex;
+  flex-direction: row;
+  gap: 0.52rem;
+  margin-bottom: 0.5rem;
+}
+
+.instagram__icon {
+  width: 1.425rem;
+}
+
+.instagram__link {
+  color: #ff7800;
+  font-size: 1.125rem;
+  line-height: 1.375;
+}
+
+.img__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+.img__container img {
+  min-width: 10rem;
+  border-radius: 0.9375rem;
 }/*# sourceMappingURL=main.css.map */
