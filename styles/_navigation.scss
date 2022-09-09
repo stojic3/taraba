@@ -8,13 +8,24 @@
   @media (min-width: 48rem) {
     padding-top: 2.8125rem;
   }
+  .btn__nav_expand {
+    & img {
+      @media (min-width: 48rem) {
+        width: 1.95rem;
+        height: 0.9225rem;
+      }
+      @media (min-width: 85.375rem) {
+        display: none;
+      }
+    }
+  }
 }
 
 .letter__container {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
-  & .letters {
+  .letters {
     height: 2.5rem;
     width: 12.5rem;
     border: 1px solid $clr--gray;
@@ -24,8 +35,12 @@
       height: 3rem;
       width: 15.5rem;
     }
+    @media (min-width: 85.375rem) {
+      height: 2.5rem;
+      width: 44.375rem;
+    }
   }
-  & .btn__search_letter {
+  .btn__search_letter {
     background: transparent;
     width: 2.5rem;
     height: 2.5rem;
@@ -36,6 +51,11 @@
       height: 3rem;
       width: 3rem;
     }
+    @media (min-width: 85.375rem) {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
     & img {
       width: 1.13125rem;
       height: 1.13125rem;
@@ -44,13 +64,10 @@
         width: 1.266875rem;
         height: 1.266875rem;
       }
-    }
-  }
-
-  .btn__nav_expand {
-    @media (min-width: 48rem) {
-      width: 1.95rem;
-      height: 0.9225rem;
+      @media (min-width: 85.375rem) {
+        width: 1.2194rem;
+        height: 1.2194rem;
+      }
     }
   }
 }

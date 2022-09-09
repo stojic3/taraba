@@ -15,6 +15,9 @@
     gap: 4.625rem;
     padding: 3.5625rem 0;
   }
+  @media (min-width: 85.375rem) {
+    gap: 10.25rem;
+  }
 }
 
 .hero__img_container {
@@ -23,9 +26,15 @@
 
   @media (min-width: 48rem) {
     padding: 0;
-    & img {
+  }
+  & img {
+    @media (min-width: 48rem) {
       max-width: 14.5rem;
       max-height: 14.5rem;
+    }
+    @media (min-width: 85.375rem) {
+      max-width: 22.125rem;
+      max-height: 22.125rem;
     }
   }
 }
@@ -37,6 +46,9 @@
   @media (min-width: 48rem) {
     padding: 0;
     max-width: 18.875rem;
+  }
+  @media (min-width: 85.375rem) {
+    max-width: 28rem;
   }
 
   .hero__header {
@@ -53,6 +65,7 @@
   .subheader__first {
     @media (min-width: 48rem) {
       font-size: 1rem;
+      line-height: 1.215rem;
     }
   }
 }

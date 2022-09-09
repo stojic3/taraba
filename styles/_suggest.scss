@@ -7,4 +7,11 @@
   .btn {
     margin-top: 0.5rem;
   }
+  @media (min-width: 48rem) {
+    gap: 1rem;
+  }
+  @media (min-width: 85.375rem) {
+    padding: 0 10.75rem;
+    margin-top: 3.5rem;
+  }
 }

@@ -53,6 +53,10 @@ h2 {
     font-size: 1.5625rem;
     line-height: 1.899rem;
   }
+  @media (min-width: 85.375rem) {
+    font-size: 1.875rem;
+    line-height: 2.278rem;
+  }
 }
 
 .section__paragraph {
@@ -63,6 +67,10 @@ h2 {
   @media (min-width: 48rem) {
     font-size: 1rem;
     line-height: 1.1719rem;
+  }
+  @media (min-width: 85.375rem) {
+    font-size: 1.25rem;
+    line-height: 1.465rem;
   }
 }
 
@@ -109,5 +117,9 @@ h2 {
   @media (min-width: 64rem) {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+  @media (min-width: 85.375rem) {
+    padding: 0 10.75rem;
+    margin-top: 3.5rem;
   }
 }
