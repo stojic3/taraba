@@ -22,5 +22,32 @@
     height: 2.5rem;
     border: 1px solid $clr--gray;
     border-radius: 50%;
+    & img {
+      width: 1.13125rem;
+      height: 1.13125rem;
+    }
+  }
+}
+
+@media (min-width: 48rem) {
+  .main__nav {
+    padding-top: 2.8125rem;
+  }
+
+  .letters {
+    height: 3rem;
+    width: 15.5rem;
+  }
+  .btn__search_letter {
+    height: 3rem;
+    width: 3rem;
+    & img {
+      width: 1.266875rem;
+      height: 1.266875rem;
+    }
+  }
+  .btn__nav_expand {
+    width: 1.95rem;
+    height: 0.9225rem;
   }
 }

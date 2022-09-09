@@ -24,3 +24,26 @@
     border-radius: $b-rad;
   }
 }
+
+@media (min-width: 48rem) {
+  .instagram__section {
+    .title__align {
+      margin-bottom: 1rem;
+    }
+    .instagram__icon {
+      width: 2.016rem;
+    }
+
+    .instagram__link {
+      font-size: 1.5625rem;
+      line-height: 1.89875;
+    }
+
+    .img__container {
+      padding-top: 1.5rem;
+      & img {
+        max-width: 15.5rem;
+      }
+    }
+  }
+}
