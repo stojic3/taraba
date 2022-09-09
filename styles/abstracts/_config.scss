@@ -43,7 +43,8 @@ h2,
 h3 {
   font-family: $font-primary;
 }
-h2 {
+h2,
+.instagram__link {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -56,6 +57,10 @@ h2 {
   @media (min-width: 85.375rem) {
     font-size: 1.875rem;
     line-height: 2.278rem;
+  }
+  @media (min-width: 90rem) {
+    font-size: 2rem;
+    line-height: 2.43rem;
   }
 }
 
@@ -71,6 +76,10 @@ h2 {
   @media (min-width: 85.375rem) {
     font-size: 1.25rem;
     line-height: 1.465rem;
+  }
+  @media (min-width: 90rem) {
+    font-size: 1.375rem;
+    line-height: 1.61rem;
   }
 }
 
@@ -96,30 +105,5 @@ h2 {
 
   @media (min-width: 48rem) {
     font-size: 1rem;
-  }
-}
-
-.main__nav,
-.last-added__section,
-.suggest-word__section,
-.frequently__section,
-.instagram__section {
-  @media (min-width: 48rem) {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-}
-
-.last-added__section,
-.suggest-word__section,
-.frequently__section,
-.instagram__section {
-  @media (min-width: 64rem) {
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-  @media (min-width: 85.375rem) {
-    padding: 0 10.75rem;
-    margin-top: 3.5rem;
   }
 }

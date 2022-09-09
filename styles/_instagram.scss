@@ -14,17 +14,13 @@
   @media (min-width: 48rem) {
     width: 2.016rem;
   }
+  @media (min-width: 85.375rem) {
+    width: 2.3125rem;
+  }
 }
 
 .instagram__link {
   color: $clr--accent;
-  font-size: 1.125rem;
-  line-height: 1.375;
-
-  @media (min-width: 48rem) {
-    font-size: 1.5625rem;
-    line-height: 1.89875;
-  }
 }
 
 .img__container {
@@ -36,6 +32,9 @@
   @media (min-width: 48rem) {
     padding-top: 1.5rem;
   }
+  @media (min-width: 85.375rem) {
+    padding-top: 2rem;
+  }
   & img {
     min-width: 10rem;
     border-radius: $b-rad;
@@ -45,6 +44,9 @@
     }
     @media (min-width: 85.375rem) {
       max-width: 18.875rem;
+    }
+    @media (min-width: 85.375rem) {
+      max-width: 20.0625rem;
     }
   }
 }

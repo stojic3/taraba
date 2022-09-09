@@ -1,0 +1,28 @@
+.main__nav,
+.last-added__section,
+.suggest-word__section,
+.frequently__section,
+.instagram__section {
+  @media (min-width: 48rem) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.last-added__section,
+.suggest-word__section,
+.frequently__section,
+.instagram__section {
+  @media (min-width: 64rem) {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  @media (min-width: 85.375rem) {
+    padding: 0 10.75rem;
+    margin-top: 3.5rem;
+  }
+  @media (min-width: 90rem) {
+    padding: 0 7.5625rem;
+    margin-top: 4.5rem;
+  }
+}
