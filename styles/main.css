@@ -11,6 +11,11 @@ body {
 main {
   padding: 0 0.9375rem;
 }
+@media (min-width: 48rem) {
+  main {
+    padding: 0;
+  }
+}
 
 h2,
 h3 {
@@ -23,11 +28,23 @@ h2 {
   line-height: 1.375rem;
   color: #2d2d2d;
 }
+@media (min-width: 48rem) {
+  h2 {
+    font-size: 1.5625rem;
+    line-height: 1.899rem;
+  }
+}
 
 .section__paragraph {
   font-size: 0.875rem;
   line-height: 1rem;
   color: #666666;
+}
+@media (min-width: 48rem) {
+  .section__paragraph {
+    font-size: 1rem;
+    line-height: 1.1719rem;
+  }
 }
 
 .icon__btn {
@@ -47,21 +64,14 @@ h2 {
   font-size: 0.875rem;
   line-height: 1.0625rem;
 }
+@media (min-width: 48rem) {
+  .btn {
+    font-size: 1rem;
+  }
+}
 
 @media (min-width: 48rem) {
-  main {
-    padding: 0;
-  }
-  h2 {
-    font-size: 1.5625rem;
-    line-height: 1.899rem;
-  }
-  .section__paragraph {
-    font-size: 1rem;
-    line-height: 1.1719rem;
-  }
-  .header,
-.main__nav,
+  .main__nav,
 .last-added__section,
 .suggest-word__section,
 .frequently__section,
@@ -69,10 +79,18 @@ h2 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
-  .btn {
-    font-size: 1rem;
+}
+
+@media (min-width: 64rem) {
+  .last-added__section,
+.suggest-word__section,
+.frequently__section,
+.instagram__section {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
+
 .carousel__container {
   display: flex;
   flex-direction: column;
@@ -184,6 +202,12 @@ h2 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 }
+@media (min-width: 48rem) {
+  .header {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
 
 .logo__container {
   display: flex;
@@ -211,6 +235,11 @@ h2 {
   padding-top: 1.75rem;
   padding-bottom: 3.5rem;
 }
+@media (min-width: 48rem) {
+  .main__nav {
+    padding-top: 2.8125rem;
+  }
+}
 
 .letter__container {
   display: flex;
@@ -223,6 +252,12 @@ h2 {
   border: 1px solid #ababab;
   border-radius: 0.9375rem;
 }
+@media (min-width: 48rem) {
+  .letter__container .letters {
+    height: 3rem;
+    width: 15.5rem;
+  }
+}
 .letter__container .btn__search_letter {
   background: transparent;
   width: 2.5rem;
@@ -230,32 +265,29 @@ h2 {
   border: 1px solid #ababab;
   border-radius: 50%;
 }
+@media (min-width: 48rem) {
+  .letter__container .btn__search_letter {
+    height: 3rem;
+    width: 3rem;
+  }
+}
 .letter__container .btn__search_letter img {
   width: 1.13125rem;
   height: 1.13125rem;
 }
-
 @media (min-width: 48rem) {
-  .main__nav {
-    padding-top: 2.8125rem;
-  }
-  .letters {
-    height: 3rem;
-    width: 15.5rem;
-  }
-  .btn__search_letter {
-    height: 3rem;
-    width: 3rem;
-  }
-  .btn__search_letter img {
+  .letter__container .btn__search_letter img {
     width: 1.266875rem;
     height: 1.266875rem;
   }
-  .btn__nav_expand {
+}
+@media (min-width: 48rem) {
+  .letter__container .btn__nav_expand {
     width: 1.95rem;
     height: 0.9225rem;
   }
 }
+
 .hero__section {
   background: #2d2d2d;
   border-radius: 0.9375rem;
@@ -264,15 +296,41 @@ h2 {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
 }
+@media (min-width: 48rem) {
+  .hero__section {
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4.625rem;
+    padding: 3.5625rem 0;
+  }
+}
 
 .hero__img_container {
   text-align: center;
   padding: 0.75rem 0;
 }
+@media (min-width: 48rem) {
+  .hero__img_container {
+    padding: 0;
+  }
+  .hero__img_container img {
+    max-width: 14.5rem;
+    max-height: 14.5rem;
+  }
+}
 
 .hero__text_container {
   max-width: 17.375rem;
   padding-left: 1rem;
+}
+@media (min-width: 48rem) {
+  .hero__text_container {
+    padding: 0;
+    max-width: 18.875rem;
+  }
 }
 .hero__text_container .hero__header {
   color: #fafafa;
@@ -285,52 +343,34 @@ h2 {
   margin-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+@media (min-width: 48rem) {
+  .hero__text_container .subheader__first {
+    font-size: 1rem;
+  }
+}
 
 .socials__container img {
   filter: invert(100);
   filter: brightness(100);
 }
 
-@media (min-width: 48rem) {
-  .hero__section {
-    border-radius: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 4.625rem;
-    padding: 3.5625rem 0;
-  }
-  .hero__section .hero__img_container {
-    padding: 0;
-  }
-  .hero__section .hero__img_container img {
-    max-width: 14.5rem;
-    max-height: 14.5rem;
-  }
-  .hero__section .hero__text_container {
-    padding: 0;
-    max-width: 18.875rem;
-  }
-  .hero__section .subheader__first {
-    font-size: 1rem;
-  }
-}
 .last-added__section {
   padding-bottom: 2rem;
 }
-.last-added__section h2 {
-  margin-bottom: 1.5rem;
-}
-
 @media (min-width: 48rem) {
   .last-added__section {
     padding-bottom: 2.8125rem;
   }
+}
+.last-added__section h2 {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 48rem) {
   .last-added__section .dot__container {
     display: none;
   }
 }
+
 .suggest-word__section {
   display: flex;
   flex-direction: column;
@@ -355,15 +395,31 @@ h2 {
   gap: 0.52rem;
   margin-bottom: 0.5rem;
 }
+@media (min-width: 48rem) {
+  .title__align {
+    margin-bottom: 1rem;
+  }
+}
 
 .instagram__icon {
   width: 1.425rem;
+}
+@media (min-width: 48rem) {
+  .instagram__icon {
+    width: 2.016rem;
+  }
 }
 
 .instagram__link {
   color: #ff7800;
   font-size: 1.125rem;
   line-height: 1.375;
+}
+@media (min-width: 48rem) {
+  .instagram__link {
+    font-size: 1.5625rem;
+    line-height: 1.89875;
+  }
 }
 
 .img__container {
@@ -372,26 +428,17 @@ h2 {
   gap: 1.5rem;
   padding: 1rem 0;
 }
+@media (min-width: 48rem) {
+  .img__container {
+    padding-top: 1.5rem;
+  }
+}
 .img__container img {
   min-width: 10rem;
   border-radius: 0.9375rem;
 }
-
 @media (min-width: 48rem) {
-  .instagram__section .title__align {
-    margin-bottom: 1rem;
-  }
-  .instagram__section .instagram__icon {
-    width: 2.016rem;
-  }
-  .instagram__section .instagram__link {
-    font-size: 1.5625rem;
-    line-height: 1.89875;
-  }
-  .instagram__section .img__container {
-    padding-top: 1.5rem;
-  }
-  .instagram__section .img__container img {
+  .img__container img {
     max-width: 15.5rem;
   }
 }/*# sourceMappingURL=main.css.map */

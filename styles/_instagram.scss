@@ -3,15 +3,28 @@
   flex-direction: row;
   gap: 0.52rem;
   margin-bottom: 0.5rem;
+
+  @media (min-width: 48rem) {
+    margin-bottom: 1rem;
+  }
 }
 .instagram__icon {
   width: 1.425rem;
+
+  @media (min-width: 48rem) {
+    width: 2.016rem;
+  }
 }
 
 .instagram__link {
   color: $clr--accent;
   font-size: 1.125rem;
   line-height: 1.375;
+
+  @media (min-width: 48rem) {
+    font-size: 1.5625rem;
+    line-height: 1.89875;
+  }
 }
 
 .img__container {
@@ -19,31 +32,16 @@
   flex-direction: row;
   gap: 1.5rem;
   padding: 1rem 0;
+
+  @media (min-width: 48rem) {
+    padding-top: 1.5rem;
+  }
   & img {
     min-width: 10rem;
     border-radius: $b-rad;
-  }
-}
 
-@media (min-width: 48rem) {
-  .instagram__section {
-    .title__align {
-      margin-bottom: 1rem;
-    }
-    .instagram__icon {
-      width: 2.016rem;
-    }
-
-    .instagram__link {
-      font-size: 1.5625rem;
-      line-height: 1.89875;
-    }
-
-    .img__container {
-      padding-top: 1.5rem;
-      & img {
-        max-width: 15.5rem;
-      }
+    @media (min-width: 48rem) {
+      max-width: 15.5rem;
     }
   }
 }

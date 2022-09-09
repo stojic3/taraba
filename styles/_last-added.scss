@@ -1,15 +1,16 @@
 .last-added__section {
   padding-bottom: 2rem;
+
+  @media (min-width: 48rem) {
+    padding-bottom: 2.8125rem;
+  }
+
   h2 {
     margin-bottom: 1.5rem;
   }
-}
 
-@media (min-width: 48rem) {
-  .last-added__section {
-    padding-bottom: 2.8125rem;
-
-    .dot__container {
+  .dot__container {
+    @media (min-width: 48rem) {
       display: none;
     }
   }

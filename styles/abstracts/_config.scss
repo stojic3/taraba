@@ -31,6 +31,10 @@ body {
 }
 main {
   padding: 0 0.9375rem;
+
+  @media (min-width: 48rem) {
+    padding: 0;
+  }
 }
 
 //TEXT
@@ -44,12 +48,22 @@ h2 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: $clr--black;
+
+  @media (min-width: 48rem) {
+    font-size: 1.5625rem;
+    line-height: 1.899rem;
+  }
 }
 
 .section__paragraph {
   font-size: 0.875rem;
   line-height: 1rem;
   color: $clr--gray-dark;
+
+  @media (min-width: 48rem) {
+    font-size: 1rem;
+    line-height: 1.1719rem;
+  }
 }
 
 // BUTTONS
@@ -71,32 +85,29 @@ h2 {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.0625rem;
+
+  @media (min-width: 48rem) {
+    font-size: 1rem;
+  }
 }
 
-@media (min-width: 48rem) {
-  main {
-    padding: 0;
-  }
-  h2 {
-    font-size: 1.5625rem;
-    line-height: 1.899rem;
-  }
-  .section__paragraph {
-    font-size: 1rem;
-    line-height: 1.1719rem;
-  }
-
-  .header,
-  .main__nav,
-  .last-added__section,
-  .suggest-word__section,
-  .frequently__section,
-  .instagram__section {
+.main__nav,
+.last-added__section,
+.suggest-word__section,
+.frequently__section,
+.instagram__section {
+  @media (min-width: 48rem) {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+}
 
-  .btn {
-    font-size: 1rem;
+.last-added__section,
+.suggest-word__section,
+.frequently__section,
+.instagram__section {
+  @media (min-width: 64rem) {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }

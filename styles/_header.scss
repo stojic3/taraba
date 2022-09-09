@@ -7,6 +7,10 @@
   padding-bottom: 0.6875rem;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
+  @media (min-width: 48rem) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .logo__container {
