@@ -27,14 +27,20 @@
       width: 14.425rem;
       height: 14.425rem;
     }
+    @media (min-width: 90rem) {
+      width: 17rem;
+      height: 17rem;
+    }
 
     .card__img_container {
       position: relative;
       top: -5%;
 
       @media (min-width: 48rem) {
-        position: relative;
         top: 13%;
+      }
+      @media (min-width: 120rem) {
+        top: -1%;
       }
 
       & .card__img {
@@ -48,6 +54,10 @@
         @media (min-width: 85.375rem) {
           width: 13.696rem;
           height: 10.56875rem;
+        }
+        @media (min-width: 120rem) {
+          width: 16.206rem;
+          height: 17rem;
         }
       }
     }
@@ -68,6 +78,10 @@
       @media (min-width: 85.375rem) {
         height: 4.21625rem;
       }
+      @media (min-width: 120rem) {
+        top: -30%;
+        height: 5rem;
+      }
 
       & .serbian__word {
         font-family: $font-primary;
@@ -81,6 +95,10 @@
           line-height: 1.51875rem;
           padding-top: 0.45rem;
         }
+        @media (min-width: 120rem) {
+          font-size: 1.5rem;
+          line-height: 1.8225rem;
+        }
       }
 
       & .english__word {
@@ -93,6 +111,10 @@
         @media (min-width: 48rem) {
           font-size: 1rem;
           line-height: 1.1718rem;
+        }
+        @media (min-width: 120rem) {
+          font-size: 1.275rem;
+          line-height: 1.611rem;
         }
       }
     }

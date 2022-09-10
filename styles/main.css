@@ -133,14 +133,24 @@ h2,
     height: 14.425rem;
   }
 }
+@media (min-width: 90rem) {
+  .carousel__container .card {
+    width: 17rem;
+    height: 17rem;
+  }
+}
 .carousel__container .card .card__img_container {
   position: relative;
   top: -5%;
 }
 @media (min-width: 48rem) {
   .carousel__container .card .card__img_container {
-    position: relative;
     top: 13%;
+  }
+}
+@media (min-width: 120rem) {
+  .carousel__container .card .card__img_container {
+    top: -1%;
   }
 }
 .carousel__container .card .card__img_container .card__img {
@@ -157,6 +167,12 @@ h2,
   .carousel__container .card .card__img_container .card__img {
     width: 13.696rem;
     height: 10.56875rem;
+  }
+}
+@media (min-width: 120rem) {
+  .carousel__container .card .card__img_container .card__img {
+    width: 16.206rem;
+    height: 17rem;
   }
 }
 .carousel__container .card .card__words {
@@ -180,6 +196,12 @@ h2,
     height: 4.21625rem;
   }
 }
+@media (min-width: 120rem) {
+  .carousel__container .card .card__words {
+    top: -30%;
+    height: 5rem;
+  }
+}
 .carousel__container .card .card__words .serbian__word {
   font-family: "Comfortaa", cursive;
   font-weight: 700;
@@ -194,6 +216,12 @@ h2,
     padding-top: 0.45rem;
   }
 }
+@media (min-width: 120rem) {
+  .carousel__container .card .card__words .serbian__word {
+    font-size: 1.5rem;
+    line-height: 1.8225rem;
+  }
+}
 .carousel__container .card .card__words .english__word {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -205,6 +233,12 @@ h2,
   .carousel__container .card .card__words .english__word {
     font-size: 1rem;
     line-height: 1.1718rem;
+  }
+}
+@media (min-width: 120rem) {
+  .carousel__container .card .card__words .english__word {
+    font-size: 1.275rem;
+    line-height: 1.611rem;
   }
 }
 .carousel__container .dot__container {
@@ -441,6 +475,12 @@ h2,
     gap: 11.5rem;
   }
 }
+@media (min-width: 120rem) {
+  .hero__section {
+    gap: 21.25rem;
+    padding: 4.6875rem;
+  }
+}
 
 .hero__img_container {
   text-align: center;
@@ -483,6 +523,16 @@ h2,
   color: #fafafa;
   margin-top: 1.4375rem;
 }
+@media (min-width: 90rem) {
+  .hero__text_container .hero__header {
+    font-size: 2.375rem;
+  }
+}
+@media (min-width: 120rem) {
+  .hero__text_container .hero__header {
+    font-size: 3.052rem;
+  }
+}
 .hero__text_container .hero__subheader {
   font-weight: 400;
   font-size: 0.875rem;
@@ -490,16 +540,36 @@ h2,
   margin-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+@media (min-width: 90rem) {
+  .hero__text_container .hero__subheader {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.215rem;
+  }
+}
 @media (min-width: 48rem) {
   .hero__text_container .subheader__first {
     font-size: 1rem;
     line-height: 1.215rem;
   }
 }
+@media (min-width: 90rem) {
+  .hero__text_container .subheader__first {
+    font-size: 1.125rem;
+    line-height: 1.367rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+}
 
 .socials__container img {
   filter: invert(100);
   filter: brightness(100);
+}
+@media (min-width: 85.375rem) {
+  .socials__container img {
+    width: 2.3625rem;
+  }
 }
 
 .last-added__section {
@@ -625,9 +695,14 @@ h2,
     max-width: 18.875rem;
   }
 }
-@media (min-width: 85.375rem) {
+@media (min-width: 90rem) {
   .img__container img {
     max-width: 20.0625rem;
+  }
+}
+@media (min-width: 120rem) {
+  .img__container img {
+    max-width: 26.9375rem;
   }
 }
 
@@ -667,5 +742,13 @@ h2,
 .instagram__section {
     padding: 0 7.5625rem;
     margin-top: 4.5rem;
+  }
+}
+@media (min-width: 120rem) {
+  .last-added__section,
+.suggest-word__section,
+.frequently__section,
+.instagram__section {
+    padding: 0 10.0625rem;
   }
 }/*# sourceMappingURL=main.css.map */
