@@ -88,6 +88,9 @@ h2,
 .icon__btn {
   border: none;
   background: transparent;
+  & :hover {
+    cursor: pointer;
+  }
 }
 
 .btn {
@@ -106,4 +109,8 @@ h2,
   @media (min-width: 48rem) {
     font-size: 1rem;
   }
+}
+
+.hidden {
+  display: none;
 }

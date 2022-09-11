@@ -27,3 +27,16 @@ const displayWords = function (arr) {
 };
 
 displayWords(words);
+
+// ************* DROP MENU *************
+
+const displayMenu = document.querySelector(".btn__nav_expand");
+const closeMenu = document.querySelector(".remove__menu");
+const dropMenu = document.querySelector(".drop-menu__container");
+
+displayMenu.addEventListener("click", () => {
+  dropMenu.classList.remove("hidden");
+});
+closeMenu.addEventListener("click", () => {
+  dropMenu.classList.add("hidden");
+});

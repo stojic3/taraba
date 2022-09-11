@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
     <title>речник</title>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,15 +45,37 @@
     <main>
       <!-- NAVIGATION -->
       <nav class="main__nav">
-        <div class="letter__container">
-          <div class="letters"></div>
-          <button class="btn__search_letter">
-            <img src="./ikonice/search-orange.svg" alt="" />
+        <div class="nav__container">
+          <div class="letter__container">
+            <div class="letters"></div>
+            <button class="icon__btn btn__search_letter">
+              <img src="./ikonice/search-orange.svg" alt="" />
+            </button>
+          </div>
+          <button class="icon__btn btn__nav_expand">
+            <img src="./ikonice/bars.svg" alt="" />
           </button>
         </div>
-        <button class="icon__btn btn__nav_expand">
-          <img src="./ikonice/bars.svg" alt="" />
-        </button>
+
+        <div class="drop-menu__container hidden">
+          <button class="icon__btn remove__menu">
+            <img src="./ikonice/x.svg" alt="" />
+          </button>
+          <ul class="links">
+            <li>
+              <a href="#hero" class="link">Почетна</a>
+            </li>
+            <li>
+              <a href="#vocabulary" class="link">Речник</a>
+            </li>
+            <li>
+              <a href="#suggest" class="link">Предложи реч</a>
+            </li>
+            <li>
+              <a href="#about" class="link">О речнику</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <!-- NAVIGATION END-->
 
