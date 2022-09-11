@@ -1,6 +1,10 @@
-import words from "./words.json" assert { type: "json" };
+import words from "./last-added-words.json" assert { type: "json" };
+import freqWords from "./most-freq-words.json" assert { type: "json" };
 
-const cardContainers = document.querySelectorAll(".carousel__card_container");
+// ************* CAROUSEL *************
+
+const cardContainerLast = document.querySelector(".lastAddedWords");
+const cardContainerFreq = document.querySelector(".freqWords");
 
 const renderWord = function (word) {
   return `
@@ -18,15 +22,21 @@ const renderWord = function (word) {
               </div>`;
 };
 
-const displayWords = function (arr) {
+const displayWords = function (arr, container) {
   arr.forEach((word) => {
-    cardContainers.forEach((container) =>
-      container.insertAdjacentHTML("beforeend", renderWord(word))
-    );
+    container.insertAdjacentHTML("beforeend", renderWord(word));
+    let dotContainer = container.nextElementSibling;
+
+    dotContainer.insertAdjacentHTML("beforeend", '<div class="dot"></div>');
+    const dots = document.querySelectorAll(".dot");
+    dots[0].style.background = "#ff7800";
   });
 };
 
-displayWords(words);
+window.addEventListener("DOMContentLoaded", function () {
+  displayWords(freqWords, cardContainerFreq);
+  displayWords(words, cardContainerLast);
+});
 
 // ************* DROP MENU *************
 
