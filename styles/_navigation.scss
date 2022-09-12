@@ -1,3 +1,12 @@
+.main__nav {
+  @media (min-width: 64rem) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .nav__container {
   display: flex;
   flex-direction: row;
@@ -18,7 +27,7 @@
         width: 1.95rem;
         height: 0.9225rem;
       }
-      @media (min-width: 85.375rem) {
+      @media (min-width: 64rem) {
         display: none;
       }
     }
@@ -38,7 +47,12 @@
     width: 12.5rem;
     border: 1px solid $clr--gray;
     border-radius: $b-rad;
-
+    padding-left: 0.6875rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    overflow: hidden;
     @media (min-width: 48rem) {
       height: 3rem;
       width: 15.5rem;
@@ -46,6 +60,27 @@
     @media (min-width: 85.375rem) {
       height: 2.5rem;
       width: 44.375rem;
+      gap: 0;
+      justify-content: space-evenly;
+      padding-right: 0.6875rem;
+    }
+
+    & .letter {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $font-primary;
+      font-size: 1.35rem;
+      line-height: 1.5rem;
+      font-weight: 700;
+      color: $clr--accent;
+      @media (min-width: 48rem) {
+        font-size: 1.375rem;
+        line-height: 1.6875rem;
+      }
+      @media (min-width: 85.375rem) {
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+      }
     }
   }
   .btn__search_letter {
@@ -88,11 +123,23 @@
   height: fit-content;
   padding-top: 7.5rem;
   padding-bottom: 2.5rem;
+  @media (min-width: 64rem) {
+    position: unset;
+    background: transparent;
+    width: auto;
+    height: auto;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
 
   .remove__menu {
     position: relative;
     left: 80%;
     padding-bottom: 1rem;
+    padding-bottom: 2.5rem;
+    @media (min-width: 64rem) {
+      display: none;
+    }
   }
   .links {
     list-style: none;
@@ -100,6 +147,10 @@
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
+    @media (min-width: 64rem) {
+      flex-direction: row;
+      gap: 1rem;
+    }
   }
   .link {
     font-family: $font-primary;
@@ -108,6 +159,18 @@
     line-height: 1.063rem;
     color: $clr--gray-dark;
     text-decoration: none;
+    @media (min-width: 64rem) {
+      font-size: 1rem;
+      line-height: 1.1875rem;
+    }
+    @media (min-width: 90rem) {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+    @media (min-width: 120rem) {
+      font-size: 1.375rem;
+      line-height: 1.6875rem;
+    }
 
     &:hover {
       color: $clr--accent;

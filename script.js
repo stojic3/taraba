@@ -1,5 +1,6 @@
-import words from "./last-added-words.json" assert { type: "json" };
-import freqWords from "./most-freq-words.json" assert { type: "json" };
+import words from "./data/last-added-words.json" assert { type: "json" };
+import freqWords from "./data/most-freq-words.json" assert { type: "json" };
+import letterArr from "./data/letters-cyrillic.json" assert { type: "json" };
 
 // ************* CAROUSEL *************
 
@@ -36,8 +37,17 @@ const displayWords = function (arr, container) {
 window.addEventListener("DOMContentLoaded", function () {
   displayWords(freqWords, cardContainerFreq);
   displayWords(words, cardContainerLast);
+  if (screen.width >= 1024) {
+    dropMenu.classList.remove("hidden");
+  }
 });
-
+window.addEventListener("resize", function () {
+  if (screen.width >= 1024) {
+    dropMenu.classList.remove("hidden");
+  } else {
+    dropMenu.classList.add("hidden");
+  }
+});
 // ************* DROP MENU *************
 
 const displayMenu = document.querySelector(".btn__nav_expand");
@@ -50,3 +60,62 @@ displayMenu.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
   dropMenu.classList.add("hidden");
 });
+
+// ************* HEADER SEARCH MANUALY *************
+
+const searchBtn = document.querySelector(".btn__search");
+const searchInput = document.querySelector(".search-word");
+
+searchBtn.addEventListener("click", function () {
+  if (searchInput.classList.contains("hidden")) {
+    searchInput.classList.remove("hidden");
+  } else {
+    searchInput.classList.add("hidden");
+  }
+});
+
+// ************* LETTER LINKS RENDERING *************
+
+// const letterArr = [
+//   "а",
+//   "б",
+//   "в",
+//   "г",
+//   "д",
+//   "ђ",
+//   "е",
+//   "ж",
+//   "з",
+//   "и",
+//   "ј",
+//   "к",
+//   "л",
+//   "љ",
+//   "м",
+//   "н",
+//   "њ",
+//   "о",
+//   "п",
+//   "р",
+//   "с",
+//   "т",
+//   "ћ",
+//   "у",
+//   "ф",
+//   "х",
+//   "ц",
+//   "џ",
+//   "ш",
+// ];
+
+const letterContainer = document.querySelector(".letters");
+
+const renderLetters = function (letter) {
+  return `<a href="#" class="letter">${letter}</a>`;
+};
+const displayLetters = function (arr) {
+  arr.forEach((letter) => {
+    letterContainer.insertAdjacentHTML("beforeend", renderLetters(letter));
+  });
+};
+displayLetters(letterArr);

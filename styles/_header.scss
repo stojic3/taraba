@@ -53,6 +53,27 @@
 }
 
 .header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .search-word {
+    height: 2.5rem;
+    width: 12.5rem;
+    border: 1px solid $clr--gray;
+    border-radius: $b-rad;
+    padding-left: 1rem;
+    font-family: $font-primary;
+    font-size: 0.75rem;
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+    }
+    @media (min-width: 48rem) {
+      height: 3rem;
+      width: 15.5rem;
+      font-size: 0.875rem;
+    }
+  }
+
   & img {
     @media (min-width: 48rem) {
       max-width: 1.3125rem;
