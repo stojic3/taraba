@@ -59,9 +59,23 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 });
 window.addEventListener("resize", function () {
+  console.log(screen.width);
+
   if (screen.width >= 1024) {
     removeHidden(dropMenu);
   } else {
     addHidden(dropMenu);
+  }
+});
+
+// ************* DARK/LIGHT THEME *************
+const btnTheme = document.querySelector(".btn__theme");
+btnTheme.addEventListener("click", function () {
+  if (document.body.classList.contains("dark")) {
+    document.body.classList.remove("dark");
+    console.log("light");
+  } else {
+    document.body.classList.add("dark");
+    console.log(document.body.classList);
   }
 });

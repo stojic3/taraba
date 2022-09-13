@@ -1,0 +1,63 @@
+body.dark {
+  // CONFIG UNIVERSALS
+  background-color: $clr--black;
+  h2,
+  h3 {
+    color: $clr--light;
+  }
+  .section__paragraph {
+    color: $clr-gray-medium;
+  }
+
+  //HEADER
+  .header {
+    background: $clr--black;
+    & img {
+      filter: invert(100);
+      filter: brightness(100);
+    }
+  }
+
+  //NAVIGATION
+  .link {
+    @media (min-width: 64rem) {
+      color: $clr-gray-medium;
+    }
+  }
+
+  //HERO
+
+  .hero__section {
+    background-color: $clr-gray-medium;
+
+    .hero__img_container {
+      .hero__img_light {
+        display: none;
+      }
+      .hero__img_dark {
+        display: block;
+      }
+    }
+    .hero__header,
+    .hero__subheader {
+      color: $clr--black;
+    }
+    .socials__container {
+      & img {
+        filter: none;
+      }
+    }
+  }
+
+  // CAROUSEL
+
+  .carousel__card_container {
+    .card__words {
+      background: $clr--light;
+      color: $clr--black;
+      & .serbian__word {
+        color: $clr--black;
+      }
+    }
+  }
+}

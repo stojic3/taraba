@@ -34,7 +34,7 @@
   @media (min-width: 48rem) {
     padding: 0;
   }
-  & img {
+  & .hero__img {
     max-width: 14.5rem;
     max-height: 14.5rem;
 
@@ -42,6 +42,10 @@
       max-width: 22.125rem;
       max-height: 22.125rem;
     }
+  }
+
+  & .hero__img_dark {
+    display: none;
   }
 }
 
