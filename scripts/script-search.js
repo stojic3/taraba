@@ -7,7 +7,8 @@ import {
   removeHidden,
   renderLetters,
   displayLetters,
-} from "../functions.js";
+  toggleDarkTheme,
+} from "./functions.js";
 
 // ************* DROP MENU *************
 
@@ -41,20 +42,32 @@ const letterContainer = document.querySelector(".letters");
 
 displayLetters(letterArr, letterContainer);
 
+// ************* DARK/LIGHT THEME *************
+
+const btnTheme = document.querySelector(".btn__theme");
+btnTheme.addEventListener("click", toggleDarkTheme);
+
+// ************** NUMBER OF WORDS ***********************
+const numOfWords = document.querySelector(".num-of__words");
+
+numOfWords.textContent = `(${searchLetter.length})`;
+
 // ************** WINDOW ***********************
 
 const wordsContainer = document.querySelector(".words__container");
 
 window.addEventListener("DOMContentLoaded", function () {
+  if (localStorage.getItem("theme") === "dark") {
+    toggleDarkTheme();
+  }
+
   displayWords(searchLetter, wordsContainer, false);
-  if (screen.width >= 1024) {
+  if (window.innerWidth >= 1024) {
     removeHidden(dropMenu);
-  } else {
-    addHidden(dropMenu);
   }
 });
 window.addEventListener("resize", function () {
-  if (screen.width >= 1024) {
+  if (window.innerWidth >= 1024) {
     removeHidden(dropMenu);
   } else {
     addHidden(dropMenu);

@@ -11,4 +11,10 @@
       margin-bottom: 1.5rem;
     }
   }
+
+  .dot__container {
+    @media (min-width: 90rem) {
+      display: none;
+    }
+  }
 }

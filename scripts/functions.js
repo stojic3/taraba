@@ -16,11 +16,12 @@ const renderWord = function (word) {
               </div>`;
 };
 
-const displayWords = function (arr, container, boolean) {
+const displayWords = function (arr, container, needDot) {
   arr.forEach((word) => {
     container.insertAdjacentHTML("beforeend", renderWord(word));
     let dotContainer = container.nextElementSibling;
-    if (boolean === true) {
+
+    if (needDot === true) {
       dotContainer.insertAdjacentHTML("beforeend", '<div class="dot"></div>');
       const dots = document.querySelectorAll(".dot");
       dots[0].style.background = "#ff7800";
@@ -50,6 +51,20 @@ const displayLetters = function (arr, container) {
   });
 };
 
+// ************* DARK/LIGHT THEME *************
+
+const toggleDarkTheme = function () {
+  if (document.body.classList.contains("dark")) {
+    document.body.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+  } else {
+    document.body.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  }
+};
+
+// ************* EXPORTS *************
+
 export {
   renderWord,
   displayWords,
@@ -57,4 +72,5 @@ export {
   removeHidden,
   renderLetters,
   displayLetters,
+  toggleDarkTheme,
 };

@@ -49,9 +49,26 @@ body.dark {
     }
   }
 
-  // CAROUSEL
+  // SECOND PAGE
 
-  .carousel__card_container {
+  .letter__header_container {
+    .num-of__words {
+      color: $clr-gray-medium;
+    }
+  }
+
+  .suggest-word__circle {
+    background: $clr--black;
+
+    .suggest__link {
+      & p {
+        color: $clr-gray-medium;
+      }
+    }
+  }
+
+  // CAROUSEL
+  .carousel__container {
     .card__words {
       background: $clr--light;
       color: $clr--black;

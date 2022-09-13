@@ -9,7 +9,9 @@ import {
   removeHidden,
   renderLetters,
   displayLetters,
+  toggleDarkTheme,
 } from "./functions.js";
+
 // ************* CAROUSEL *************
 
 const cardContainerLast = document.querySelector(".lastAddedWords");
@@ -47,35 +49,27 @@ const letterContainer = document.querySelector(".letters");
 
 displayLetters(letterArr, letterContainer);
 
+// ************* DARK/LIGHT THEME *************
+
+const btnTheme = document.querySelector(".btn__theme");
+btnTheme.addEventListener("click", toggleDarkTheme);
+
 // ************* WINDOW *************
 
 window.addEventListener("DOMContentLoaded", function () {
+  if (localStorage.getItem("theme") === "dark") {
+    toggleDarkTheme();
+  }
   displayWords(freqWords, cardContainerFreq, true);
   displayWords(words, cardContainerLast, true);
-  if (screen.width >= 1024) {
+  if (window.innerWidth >= 1024) {
     removeHidden(dropMenu);
-  } else {
-    addHidden(dropMenu);
   }
 });
 window.addEventListener("resize", function () {
-  console.log(screen.width);
-
-  if (screen.width >= 1024) {
+  if (window.innerWidth >= 1024) {
     removeHidden(dropMenu);
   } else {
     addHidden(dropMenu);
-  }
-});
-
-// ************* DARK/LIGHT THEME *************
-const btnTheme = document.querySelector(".btn__theme");
-btnTheme.addEventListener("click", function () {
-  if (document.body.classList.contains("dark")) {
-    document.body.classList.remove("dark");
-    console.log("light");
-  } else {
-    document.body.classList.add("dark");
-    console.log(document.body.classList);
   }
 });
