@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
-    <title>речник - претрага</title>
+    <title>речник</title>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,6 +29,13 @@
         </button>
       </div>
       <div class="header__nav">
+        <input
+          class="search-word hidden"
+          type="search"
+          id="search-word"
+          name="search-word"
+          placeholder="Укуцајте своју реч овде..."
+        />
         <button class="icon__btn btn__search">
           <img src="./ikonice/search.svg" alt="" />
         </button>
@@ -66,7 +73,7 @@
               <a href="index.html" class="link">Почетна</a>
             </li>
             <li>
-              <a href="#vocabulary" class="link">Речник</a>
+              <a href="search.html" class="link">Речник</a>
             </li>
             <li>
               <a href="#suggest" class="link">Предложи реч</a>
@@ -79,28 +86,23 @@
       </nav>
       <!-- NAVIGATION END-->
 
-      <!-- LAST ADDED -->
-      <section class="last-added__section">
-        <h2>Последње додате речи</h2>
-        <div class="carousel__container">
-          <div class="carousel__card_container lastAddedWords"></div>
-          <div class="dot__container"></div>
+      <!-- LETTER RESULT -->
+      <section class="letter__result">
+        <div class="letter__header_container">
+          <h2>A</h2>
+          <p class="num-of__words">(2)</p>
+        </div>
+        <div class="words__container carousel__container">
         </div>
       </section>
-      <!-- LAST ADDED END -->
 
-      <!-- MOST FREQUENTLY SEARCHED -->
-      <section class="frequently__section">
-        <h2>Најчешће прегледане речи</h2>
-        <div class="carousel__container">
-          <div class="carousel__card_container freqWords"></div>
-          <div class="dot__container"></div>
-        </div>
-      </section>
-      <!-- MOST FREQUENTLY SEARCHED END-->
-    </main>
+      <!-- SUGGEST WORD-->
+      <div class="suggest-word__circle">
+        <a href="#" class="suggest__link"><p>Предложи реч</p></a>
+      </div>
+      <!-- SUGGEST WORD END -->
 
     <!-- javascript -->
-    <script src="script.js" type="module"></script>
+    <script src="./scripts/script-search.js" type="module"></script>
   </body>
 </html>
