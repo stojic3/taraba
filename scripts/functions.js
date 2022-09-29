@@ -40,14 +40,25 @@ const removeHidden = function (container) {
 };
 
 // ************* LETTER LINKS RENDERING *************
+// href="search.html"
 
 const renderLetters = function (letter) {
-  return `<a href="search.html" class="letter">${letter}</a>`;
+  return `<a class="letter">${letter}</a>`;
 };
 
 const displayLetters = function (arr, container) {
   arr.forEach((letter) => {
     container.insertAdjacentHTML("beforeend", renderLetters(letter));
+  });
+  container.addEventListener("click", (e) => {
+    if (e.target.tagName === "A" && e.target.classList.contains("underline")) {
+      e.target.classList.remove("underline");
+    } else if (e.target.tagName === "A") {
+      container.childNodes.forEach((letter) => {
+        letter.classList.remove("underline");
+      });
+      e.target.classList.add("underline");
+    }
   });
 };
 
@@ -63,6 +74,62 @@ const toggleDarkTheme = function () {
   }
 };
 
+// ************* SLIDE *************
+
+const slide = function (container) {
+  let sliderInner = container;
+
+  let pressed = false;
+  let pageX;
+  let startX;
+  let x;
+  let scrollLeft;
+
+  sliderInner.addEventListener("mousedown", (e) => {
+    pressed = true;
+    pageX = e.pageX;
+    startX = pageX - sliderInner.offsetLeft;
+    scrollLeft = sliderInner.scrollLeft;
+    sliderInner.style.cursor = "grabbing";
+  });
+
+  sliderInner.addEventListener("mouseenter", () => {
+    sliderInner.style.cursor = "grab";
+  });
+
+  sliderInner.addEventListener("mouseup", () => {
+    pressed = false;
+    sliderInner.style.cursor = "grab";
+  });
+
+  sliderInner.addEventListener("mouseleave", () => {
+    pressed = false;
+  });
+
+  sliderInner.addEventListener("mousemove", (e) => {
+    if (!pressed) return;
+    e.preventDefault();
+    x = e.pageX - sliderInner.offsetLeft;
+    const moved = x - startX;
+    sliderInner.scrollLeft = scrollLeft - moved;
+  });
+};
+
+// ************* CHANGE PAGE *************
+
+const changeUrl = function (container) {
+  let isLetterSelected = false;
+  container.childNodes.forEach((child) => {
+    if (child.classList.contains("underline")) {
+      isLetterSelected = true;
+    }
+  });
+  if (isLetterSelected) {
+    const newUrl = window.location.origin + "/search.html";
+    window.location = newUrl;
+  }
+};
+
 // ************* EXPORTS *************
 
 export {
@@ -73,4 +140,6 @@ export {
   renderLetters,
   displayLetters,
   toggleDarkTheme,
+  slide,
+  changeUrl,
 };

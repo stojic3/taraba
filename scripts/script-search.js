@@ -8,6 +8,7 @@ import {
   renderLetters,
   displayLetters,
   toggleDarkTheme,
+  slide,
 } from "./functions.js";
 
 // ************* DROP MENU *************
@@ -57,6 +58,7 @@ numOfWords.textContent = `(${searchLetter.length})`;
 const wordsContainer = document.querySelector(".words__container");
 
 window.addEventListener("DOMContentLoaded", function () {
+  slide(letterContainer);
   if (localStorage.getItem("theme") === "dark") {
     toggleDarkTheme();
   }

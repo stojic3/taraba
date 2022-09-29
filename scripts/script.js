@@ -10,6 +10,8 @@ import {
   renderLetters,
   displayLetters,
   toggleDarkTheme,
+  slide,
+  changeUrl,
 } from "./functions.js";
 
 // ************* CAROUSEL *************
@@ -57,6 +59,9 @@ btnTheme.addEventListener("click", toggleDarkTheme);
 // ************* WINDOW *************
 
 window.addEventListener("DOMContentLoaded", function () {
+  slide(cardContainerLast);
+  slide(cardContainerFreq);
+  slide(letterContainer);
   if (localStorage.getItem("theme") === "dark") {
     toggleDarkTheme();
   }
@@ -73,3 +78,8 @@ window.addEventListener("resize", function () {
     addHidden(dropMenu);
   }
 });
+
+// SEARCH
+const btnSearchLetter = document.querySelector(".btn__search_letter");
+
+btnSearchLetter.addEventListener("click", () => changeUrl(letterContainer));

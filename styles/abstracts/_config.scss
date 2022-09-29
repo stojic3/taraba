@@ -116,3 +116,7 @@ h2,
 .hidden {
   display: none;
 }
+
+.underline {
+  border-bottom: 2px solid $clr--gray-dark !important;
+}
